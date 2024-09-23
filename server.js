@@ -7,7 +7,7 @@ require('dotenv').config();
 // Ρύθμιση CORS
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production'
-    ? 'https://myapp.herokuapp.com'
+    ? 'https://backend-repo-production-cb1a.up.railway.app/'
     : 'http://localhost:3000',
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
