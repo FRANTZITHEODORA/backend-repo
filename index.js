@@ -5,7 +5,7 @@ const app = express();
 
 // Ρύθμιση CORS
 const corsOptions = {
-  origin: 'http://localhost:3000', // Η διεύθυνση του frontend
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000', // Διεύθυνση του frontend
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
   credentials: true
@@ -50,7 +50,7 @@ app.get('/api/data', (req, res) => {
   });
 });
 
-// Χρήση δυναμικού port από το Heroku ή 5000 για τοπική ανάπτυξη
+// Χρήση δυναμικού port από το Heroku ή 8080 για τοπική ανάπτυξη
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
