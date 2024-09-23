@@ -2,13 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-require('dotenv').config();
-
 // Ρύθμιση CORS
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production'
-    ? 'https://myapp.herokuapp.com'
-    : 'http://localhost:3000',
+  origin: 'http://localhost:3000', // Η διεύθυνση του frontend
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
   credentials: true
@@ -53,8 +49,8 @@ app.get('/api/data', (req, res) => {
   });
 });
 
-// Χρήση δυναμικού port από το Heroku
-const port = process.env.PORT || 5000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+// Χρήση δυναμικού port από το Heroku ή 5000 για τοπική ανάπτυξη
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
