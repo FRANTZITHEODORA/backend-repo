@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -50,7 +51,7 @@ app.get('/api/data', (req, res) => {
 });
 
 // Χρήση δυναμικού port από το Heroku ή 5000 για τοπική ανάπτυξη
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
