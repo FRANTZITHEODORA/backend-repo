@@ -5,7 +5,9 @@ const app = express();
 
 // Ρύθμιση CORS
 const corsOptions = {
-  origin: 'https://frantzitheodora.github.io', // Διεύθυνση του frontend
+  origin: process.env.NODE_ENV === 'production'
+    ? 'https://frantzitheodora.github.io/frontend-repo/'
+    : 'http://localhost:3000',
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
   credentials: true
