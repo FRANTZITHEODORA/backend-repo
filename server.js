@@ -9,7 +9,7 @@ const corsOptions = {
   origin: [
     'http://localhost:3000', // Τοπικό frontend
     'http://localhost:8080', // Τοπικό backend
-    'https://frantzitheodora.github.io/frontend-repo/', // Παραγωγή frontend
+    'https://frantzitheodora.github.io', // Παραγωγή frontend
     'https://backend-repo-production-cb1a.up.railway.app/' // Παραγωγή backend
   ],
   methods: 'GET,POST,PUT,DELETE',

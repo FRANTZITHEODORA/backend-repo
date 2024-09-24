@@ -6,7 +6,7 @@ const app = express();
 // Ρύθμιση CORS
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production'
-    ? 'https://frantzitheodora.github.io/frontend-repo/'
+    ? 'https://frantzitheodora.github.io'
     : 'http://localhost:3000',
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
