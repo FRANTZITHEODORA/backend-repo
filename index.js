@@ -5,8 +5,8 @@ const app = express();
 
 // Ρύθμιση CORS
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production'
-    ? 'https://frantzitheodora.github.io'
+  origin:
+    'https://frantzitheodora.github.io'
     : 'http://localhost:3000',
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
@@ -16,7 +16,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Route για το root '/'
-app.get('/', (req, res) => {
+app.get('https://backend-repo-production-cb1a.up.railway.app', (req, res) => {
   res.send('Hello, this is the root path!');
 });
 
