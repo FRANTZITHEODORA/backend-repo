@@ -12,8 +12,7 @@ const corsOptions = {
   allowedHeaders: 'Content-Type,Authorization',
   credentials: true
 };
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Route για το root '/'
 app.get('/', (req, res) => {
