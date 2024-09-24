@@ -16,7 +16,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Route για το root '/'
-app.get('https://backend-repo-production-cb1a.up.railway.app', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello, this is the root path!');
 });
 
