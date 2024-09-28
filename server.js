@@ -27,19 +27,19 @@ app.get('/', (req, res) => {
 app.get('/api/data', (req, res) => {
   res.json({
     "name": "FRANTZI THEODORA",
-    "jobTitle": "Junior Web Developer",
+    "jobTitle": "ANDROID - WEB DEVELOPER",
     "diploma": "Diploma in IT - DATALABS",
-    "phone": "123-456-7890",
-    "email": "frantzi@example.com",
-    "location": "Thessaloniki, Greece",
-    "github": "https://github.com/frantzi",
-    "linkedin": "https://linkedin.com/in/frantzi",
-    "codeLink": "https://frantzi.dev",
+    "phone": "6976989318",
+    "email": "frantzi1991@gmail.com",
+    "location": "THESSALONIKI, GREECE",
+    "github": "https://github.com/FRANTZITHEODORA",
+    "linkedin": "https://www.linkedin.com/in/theodora-frantzi/",
+    "codeLink": "https://drive.google.com/file/d/1rJPLnjJuLCqgI8goPye-9rH1jQNJ2F5l/view",
     "image": "https://via.placeholder.com/150",
     "skills": {
-      "Web Development": ["HTML", "CSS", "JavaScript", "PHP", "Python", "Java", "C#", "Wordpress", "WooCommerce", "Android Studio"],
-      "UX/UI Design": ["Figma", "Photoshop", "Illustrator", "HTML & CSS", "Canva"],
-      "Other Skills": ["ERP Systems (Singular, Pylon, Galaxy)", "Digital Marketing (Google Ads, Meta Business Suite, Social Media)", "Language: English"]
+      "Web Development": ["HTML", "CSS", "Node.js", "JavaScript", "PHP", "Kotlin", "Python", "Java", "C#", "Wordpress", "WooCommerce", "Android Studio"],
+      "UX/UI Design": ["Figma", "Photoshop", "Illustrator", "React", "JSON", "XML"],
+      "Other Skills": ["Canva", "ERP Systems (Singular, Pylon, Galaxy)", "Digital Marketing (Google Ads, Meta Business Suite, Social Media)", "Language: English"]
     },
     "studies": [
       {
@@ -51,7 +51,7 @@ app.get('/api/data', (req, res) => {
         "institution": "DIPAE"
       }
     ],
-    "bio": "I am a Junior Web Developer (Diploma in IT Datalabs), with a great willingness to work and implement more projects..."
+    "bio": `I am a Web Developer, with a great willingness to work and implement more projects. For the last two years, I have been working as an android developer (Android studio). I mainly work in Kotlin, however I really like to work with Java as well. I have experience in web services, in data management and presentation with rest api and less with soap requests (json & xml). Also, I'm pretty well versed in the Firebase Console environment and be able to set up the backend of an app, as well. I'm currently trying to train myself in Spring Boot and learn to build Rest Services. This is a React app, witch uses an api I created with Node.js. I love web services and the functionality they offer to my applications. When I started working as an Android developer, I didn't need to create them, only use them. However, whenever I use something, I really like to know how it is created as well, and that's why I decided to learn how to build them myself.  `
   });
 });
 
